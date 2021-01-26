@@ -8,7 +8,7 @@ const octo = {
     owner = gitOwner;
     repo = gitRepo;
     octokit = new Octokit({
-      auth: "28607f193b491e736d04516513ed115c4cb59b24"
+      auth: "fb67ab7da977661bbc19cacd71115d3997875432"
     })
   },
   getBranches: async function(callback = (branches = []) => {}) {
