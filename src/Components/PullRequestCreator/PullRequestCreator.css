@@ -1,0 +1,27 @@
+.prCreatorContainer {
+  margin: 10px;
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.prSelectContainer {
+  text-align: center;
+}
+
+.prCreatorTitle {
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+select {
+  margin: 0 5px;
+}
+
+.prInputContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20%;
+}

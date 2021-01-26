@@ -1,13 +1,15 @@
 .header {
   background: linear-gradient(#4f4f4f 0%, #636363 50%, #4f4f4f 100%);
-  height: calc(8%);
+  height: 8%;
   margin-bottom: 10px;
+  padding-top: 12px;
 }
 
 .tabContainer {
   display: flex;
   height: 100%;
   align-items: flex-end;
+  overflow-x: scroll;
 }
 
 .routeBtn {
@@ -15,9 +17,11 @@
   color: white;
   text-decoration: none;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 30px;
   border: 3px solid white;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
 }
 
 .tab {
@@ -28,6 +32,7 @@
   cursor: pointer;
   font-weight: 600;
   transition-duration: 0.3s;
+  white-space: nowrap;
 }
 
 .tab:not(.tabSelected):hover {

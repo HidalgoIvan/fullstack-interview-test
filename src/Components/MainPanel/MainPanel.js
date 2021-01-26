@@ -9,7 +9,7 @@ export default class MainPanel extends Component {
   constructor(props) {
     super(props);
 
-    octo.initialize('FlatDigital', 'fullstack-interview-test');
+    octo.initialize();
 
     this.state = {
      branches: [],
