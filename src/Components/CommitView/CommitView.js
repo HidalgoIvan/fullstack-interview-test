@@ -7,7 +7,6 @@ export default class CommitView extends Component {
   }
   
   render() {
-    console.log(this.props.commits);
     return (
       <div className="commitView">
         {this.props.commits.map((commit, index) => {

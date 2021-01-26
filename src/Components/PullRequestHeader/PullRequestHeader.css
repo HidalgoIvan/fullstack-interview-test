@@ -1,0 +1,9 @@
+.prHeader {
+  background: linear-gradient(#4f4f4f 0%, #636363 50%, #4f4f4f 100%);
+  height: 8%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 10px solid #d7d7d7;
+  padding-top: 12px;
+}
