@@ -57,7 +57,7 @@ export default class PullRequestCard extends Component {
     if(pr.merged_at) {
       return 'prMerged';
     }
-    switch (pr.status) {
+    switch (pr.state) {
       case 'open':
         return 'prOpen';
       case 'closed':
