@@ -34,7 +34,6 @@ const octo = {
       repo,
       state: 'all'
     });
-    console.log("prs", pullRequests.data);
     callback(pullRequests.data);
   },
   createPullRequest: async function(head = "", base = "", title = "", body = "", callback = (response) => {}) {
@@ -47,7 +46,6 @@ const octo = {
         title,
         body
       });
-      console.log("response", response);
       callback(response);
     }
     catch(e) {
