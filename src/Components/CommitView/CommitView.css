@@ -1,0 +1,78 @@
+.commitView {
+  overflow: auto;
+  --commitView-height: 120px;
+}
+.commitContainer {
+  display: flex;
+  height: var(--commitView-height);
+  position: relative;
+}
+
+.commitLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7%;
+  overflow: hidden;
+}
+
+.commitLine {
+  background: linear-gradient(90deg, transparent 46%, #b3b3b3 46%, #b3b3b3 54%, transparent 54%);
+  background-repeat: no-repeat;
+}
+
+.commitContainer:first-child .commitLine{
+  background-position: 0 calc(var(--commitView-height) / 2);
+}
+
+.commitContainer:last-child .commitLine {
+  background-position: 0 calc(var(--commitView-height) / -2);
+}
+
+.commitContainer:last-child .commitLine::after {
+  content: 'Oldest';
+  position: absolute;
+  bottom: 10px;
+}
+
+.commitContainer:first-child .commitLine::after {
+  content: 'Latest';
+  position: absolute;
+  top: 10px;
+  bottom: unset;
+}
+
+.commitDot {
+  width: 30px;
+  height: 30px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.481);
+  border-radius: 100%;
+}
+
+.commitContainer:nth-child(odd) {
+  background: linear-gradient(#2b2b2b, #464646 100%);
+}
+
+.commitContainer:nth-child(even) {
+  background: linear-gradient(#5c5c5c, #8a8a8a 100%);
+}
+
+.commitDataHeader {
+  display: flex;
+  padding: 5px 12px;
+  justify-content: space-between;
+  background-color: rgba(26, 26, 26, 0.673);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 8px;
+}
+
+.commitInfo {
+  width: 100%;
+}
+
+.commitMessage {
+  font-style: italic;
+  margin-top: 12px;
+}
